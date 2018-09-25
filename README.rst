@@ -13,12 +13,12 @@ We have chosen most commonly used visualizations and these projects work by read
 List of Visualizations
 ----------------------
 
- - [Stacked/Grouped Bars](https://github.com/tahir1122/Unity.Vis/wiki/Stacked-Bar-Chart)
+ - Stacked/Grouped Bars(https://github.com/tahir1122/Unity.Vis/wiki/Stacked-Bar-Chart)
  - Matrix
  - Zoomable treemap
- - [Circular Heatchart](https://github.com/tahir1122/Unity.Vis/wiki/Circular-Heatchart)
- - [Bubble chart](https://github.com/tahir1122/Unity.Vis/wiki/Bubble-Chart)
- - [Scatterplot](https://github.com/tahir1122/Unity.Vis/wiki/Scatterplot)
+ - Circular Heatchart(https://github.com/tahir1122/Unity.Vis/wiki/Circular-Heatchart)
+ - Bubble chart(https://github.com/tahir1122/Unity.Vis/wiki/Bubble-Chart)
+ - Scatterplot(https://github.com/tahir1122/Unity.Vis/wiki/Scatterplot)
 
 ---
 
