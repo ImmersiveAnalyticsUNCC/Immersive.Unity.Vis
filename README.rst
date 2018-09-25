@@ -3,7 +3,8 @@ Unity.Vis
 ============
 
 
-# Unity Vis
+Unity Vis
+---------
 
 ---
 
@@ -13,7 +14,8 @@ We have chosen most commonly used visualizations and these projects work by read
 
 ---
 
-## List of Visualizations
+List of Visualizations
+----------------------
 
  - [Stacked/Grouped Bars](https://github.com/tahir1122/Unity.Vis/wiki/Stacked-Bar-Chart)
  - Matrix
@@ -26,7 +28,8 @@ We have chosen most commonly used visualizations and these projects work by read
 
 
 
-## Generic utilities
+Generic utilities
+-----------------
 
 - We've started to design a generic data adaptor. ([Checkout this file](https://github.com/tahir1122/Unity.Vis/blob/master/DataAdapter.cs))
     - Currently has an implementation for csv files and a simple json reader. The json reader comes from here: [http://wiki.unity3d.com/index.php/SimpleJSON](http://wiki.unity3d.com/index.php/SimpleJSON)
@@ -35,7 +38,8 @@ We have chosen most commonly used visualizations and these projects work by read
 
 ---
 
-## Need help?
+Need help?
+---------
 
 In case of any problem or assistance, feel free to reach out to us:
 
