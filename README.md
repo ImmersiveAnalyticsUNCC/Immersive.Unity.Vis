@@ -1,6 +1,6 @@
-============
-Unity.Vis
-============
+
+# Unity.Vis
+
 
 
 
@@ -9,3 +9,5 @@ This work is designed to provide basic projects of Unity3D visualizations that s
 We have chosen most commonly used visualizations and these projects work by reading data from CSV files and displaying it using respective visualizations.
 
 ---
+
+More documentation can be found in [Wiki](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki)
