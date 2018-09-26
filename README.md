@@ -35,7 +35,9 @@ We have chosen most commonly used visualizations and these projects work by read
 In case of any problem or assistance, feel free to reach out to us:
 
 Tahir Mahmood - tmahmood@uncc.edu
+
 Akshay Murari - aayyanch@uncc.edu
+
 Willis Fulmer - wfulmer1@uncc.edu
 
 
