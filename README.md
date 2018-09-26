@@ -2,7 +2,7 @@
 
 ---
 
-This work is designed to provide basic projects of Unity3D visualizations that students can use in their projects and extend them further as needed.
+This work provides a library of example immersive visualization and interaction projects built with Unity3D for AR (HoloLens) and VR (Rift and Vive).
 
 We have chosen most commonly used visualizations and these projects work by reading data from CSV files and displaying it using respective visualizations.
 
@@ -11,11 +11,13 @@ We have chosen most commonly used visualizations and these projects work by read
 ## List of Visualizations
 
  - [Stacked/Grouped Bars](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Stacked-Bar-Chart)
- - Matrix
- - Zoomable treemap
  - [Circular Heatchart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Circular-Heatchart)
  - [Bubble chart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Bubble-Chart)
  - [Scatterplot](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Scatterplot)
+ - Image / image stack
+ - Node link network visualization
+ - Matrix
+ - Zoomable treemap
 
 ---
 
