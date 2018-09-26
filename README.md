@@ -39,3 +39,7 @@ Tahir Mahmood - tmahmood@uncc.edu
 Akshay Murari - aayyanch@uncc.edu
 
 Willis Fulmer - wfulmer1@uncc.edu
+
+
+![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/blob/master/barChart.png)
+![heatchart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/blob/master/Circular_Heatchart_Example.png)
