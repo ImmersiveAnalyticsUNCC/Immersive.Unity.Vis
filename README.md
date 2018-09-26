@@ -43,3 +43,6 @@ Willis Fulmer - wfulmer1@uncc.edu
 
 ![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/blob/master/barChart.png)
 ![heatchart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/blob/master/Circular_Heatchart_Example.png)
+
+Past Contributors:
+Timothy Hayduk (May 2018)
