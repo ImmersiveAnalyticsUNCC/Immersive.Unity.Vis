@@ -15,7 +15,7 @@ We have chosen most commonly used visualizations and these projects work by read
  - [Bubble chart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Bubble-Chart)
  - [Scatterplot](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Scatterplot)
  - Image / image stack
- - Node link network visualization
+ - [Node link network visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/Node-link-network-visualization)
  - Parallel coordinate
  - Radical layout
  - Matrix
