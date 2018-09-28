@@ -16,7 +16,7 @@ We have chosen most commonly used visualizations and these projects work by read
  - [Scatterplot](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Scatterplot)
  - Image / image stack
  - [Node link network visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/Node-link-network-visualization)
- - Parallel coordinate
+ - [Parallel coordinate](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Parallel-Coordinate-Graph)
  - Radical layout
  - Matrix
  - Geospatial visualization
