@@ -53,3 +53,4 @@ Willis Fulmer - wfulmer1@uncc.edu
 ## Past Contributors
 
 Timothy Hayduk (May 2018)
+Vidhan Shukla (Dec 2016)
