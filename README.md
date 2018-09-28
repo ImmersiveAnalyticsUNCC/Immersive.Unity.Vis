@@ -19,7 +19,7 @@ We have chosen most commonly used visualizations and these projects work by read
  - [Parallel coordinate](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Parallel-Coordinate-Graph)
  - Radical layout
  - Matrix
- - Geospatial visualization
+ - [Geospatial visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/GeoSpatial-Vis)
  - Zoomable treemap
 
 ---
