@@ -17,6 +17,7 @@ We have chosen most commonly used visualizations and these projects work by read
  - [Image / image stack](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/Stacked-Images)
  - [Node link network visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/Node-link-network-visualization)
  - [Parallel coordinate](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Parallel-Coordinate-Graph)
+ - [3D Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/3D-barChart)
  - Radical layout
  - Matrix
  - [Geospatial visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/GeoSpatial-Vis)
