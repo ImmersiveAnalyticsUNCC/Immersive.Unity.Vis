@@ -10,7 +10,7 @@ Functions provided in this example:
 2. Labels for bar chart
 3. Interactive mouse selection and text labels for showing data
 
-![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/3D_barChart/barchart2.png)
+![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/3D_barChart/barchart-interact.png)
 
 
 To launch this in Unity3d follow the steps below:
