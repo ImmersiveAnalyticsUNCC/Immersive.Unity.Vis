@@ -38,21 +38,27 @@ We have chosen most commonly used visualizations and these projects work by read
 
 ## Need help?
 
-In case of any problem or assistance, feel free to reach out to us:
+In case of any problem or assistance, feel free to reach out to us.
 
-Tahir Mahmood - tmahmood@uncc.edu
 
-Akshay Murari - aayyanch@uncc.edu
-
-Willis Fulmer - wfulmer1@uncc.edu
 
 ## Example snapshots
 
 ![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Stacked_Bars/barChart.png)
 ![heatchart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Circular_Heatchart/Circular_Heatchart_Example.png)
 
+
+
 ## Past Contributors
+
+Tahir Mahmood (May 2019)
+
+Willis Fulmer (Dec 2017)
 
 Timothy Hayduk (May 2018)
 
 Vidhan Shukla (Dec 2016)
+
+
+
+

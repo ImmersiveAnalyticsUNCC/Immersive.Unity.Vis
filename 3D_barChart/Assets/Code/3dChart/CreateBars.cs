@@ -39,13 +39,13 @@ public class CreateBars : MonoBehaviour {
                 //GameObject theBar = GameObject.Find("theBar"); //the cube within the bar prefab
                 //theBar.GetComponent<Renderer>().material.color = new Color(numCat * 20, (float)red, 1);
 
-                // thsi next section copies the relevant attributes of the bar in the bar itself, so they can be accessed later - currently in the create pop up label class
+                // this next section copies the relevant attributes of the bar in the bar itself, so they can be accessed later - currently in the create pop up label class
                 var barVal = bar.GetComponent<CreatePopUpLabel>();
                 barVal.value = JSONtoObj.MainChart.category[numCat].values[numValues];
                 barVal.xLabel = JSONtoObj.MainChart.xaxis.values[numValues];
                 barVal.categoryLabel = JSONtoObj.MainChart.category[numCat].label;
 
-                //                Bar.gameObject.transform.localScale = new Vector3(barWidth, (float)height, barDepth);
+                // Bar.gameObject.transform.localScale = new Vector3(barWidth, (float)height, barDepth);
                 Vector3 barScale = new Vector3(barWidth, (float)height, barDepth);
                 StartCoroutine(inflateBar(bar, barScale));
 
