@@ -13,9 +13,9 @@ public class scatterplot : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        readData("Assets/SP_data.csv", x_axis1, y_axis1, clusterID1);
+        readData("Assets/Data/SP_data.csv", x_axis1, y_axis1, clusterID1);
         makePlot(1, x_axis1, y_axis1, clusterID1);
-        readData("Assets/SP2_data.csv", x_axis2, y_axis2, clusterID2);
+        readData("Assets/Data/SP2_data.csv", x_axis2, y_axis2, clusterID2);
         makePlot(0, x_axis2, y_axis2, clusterID2);
     }
 	// reading and parsing CSV file and adding data to appropriate data structures
