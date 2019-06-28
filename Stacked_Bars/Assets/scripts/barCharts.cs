@@ -16,7 +16,7 @@ public class barCharts : MonoBehaviour {
     public Transform textprefab;
     void Start () {
         Camera.main.transform.position = new Vector3(4.5f, 6f, -11.5f);
-        Rawdata = DataAdaptor.ReadCSVFile("Assets/stacked_data.csv");   // reading csv file
+        Rawdata = DataAdaptor.ReadCSVFile("Assets/Data/stacked_data.csv");   // reading csv file
         foreach(string item in Rawdata)
         {
             data.Add(float.Parse(item));                                // converting data from string to float
