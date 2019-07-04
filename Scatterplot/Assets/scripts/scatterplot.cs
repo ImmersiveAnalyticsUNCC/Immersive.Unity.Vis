@@ -2,26 +2,21 @@
 using System.IO;
 using UnityEngine;
 
-public class scatterplot : MonoBehaviour {
-    static float xOffset = 0.4f;
-    private List<float> x_axis1 = new List<float>();
-    private List<float> y_axis1 = new List<float>();
-    private List<string> clusterID1 = new List<string>();
-    private List<float> x_axis2 = new List<float>();
-    private List<float> y_axis2 = new List<float>();
-    private List<string> clusterID2 = new List<string>();
+public class scatterplot : MonoBehaviour
+{
+    // Variables to store data, xy locations and cluster IDs
+    private List<float> x_axis = new List<float>();
+    private List<float> y_axis = new List<float>();
+    private List<string> clusterID = new List<string>();
 
     // Use this for initialization
     void Start () {
-        readData("Assets/Data/SP_data.csv", x_axis1, y_axis1, clusterID1);
-        makePlot(1, x_axis1, y_axis1, clusterID1);
-        readData("Assets/Data/SP2_data.csv", x_axis2, y_axis2, clusterID2);
-        makePlot(0, x_axis2, y_axis2, clusterID2);
+        readData("Assets/Data/SP_data.csv");
+        makePlot();
     }
 	// reading and parsing CSV file and adding data to appropriate data structures
-    public void readData(string filename, List<float> x_axis, List<float> y_axis, List<string> clusterID)
+    public void readData(string filename)
     {
-        List<string> all_data = new List<string>();
         StreamReader file = new StreamReader(filename);
         string line;
         while ((line = file.ReadLine()) != null)
@@ -33,14 +28,14 @@ public class scatterplot : MonoBehaviour {
         }
     }
     // creating Unity built-in primitive(sphere) and using it as a dataPoint in scatter-plot
-    public void makePlot(int check, List<float> x_axis, List<float> y_axis, List<string> clusterID)
+    public void makePlot()
     {
         float scale = 0.03f;
         for (int i = 0; i < x_axis.Count; i++)
         {
             var dataPt = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            if(check == 1) { dataPt.transform.parent = this.transform; }
-            dataPt.transform.localPosition = new Vector3((x_axis[i] / 1.4f) + xOffset, (y_axis[i] / 1.5f - 0.6f) + xOffset, 1f);
+            //dataPt.transform.parent = this.transform;
+            dataPt.transform.localPosition = new Vector3(x_axis[i], y_axis[i], 1f);
             dataPt.transform.localRotation = Quaternion.identity;
             dataPt.transform.localScale = new Vector3(scale, scale, scale);
             Material newMaterial = new Material(Shader.Find("VertexLit"));
