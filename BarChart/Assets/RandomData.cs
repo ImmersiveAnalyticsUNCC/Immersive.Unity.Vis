@@ -27,11 +27,14 @@ public class RandomData : MonoBehaviour
     {
         for (int i = 0; i < number; i++)
         {
+            // for Bar prefeb
             Vector3 tarPos = new Vector3(2 * i - number, data[i] / 2.0f, 0);
-            BarPrefeb.transform.localScale = new Vector3(1, data[i], 1);
-            //BarPrefeb.GetComponents<Label>;
-            Instantiate(BarPrefeb, tarPos, Quaternion.identity);
+            // for Cylinder prefeb
+            //Vector3 tarPos = new Vector3(2 * i - number, data[i], 0);
+            var p = Instantiate(BarPrefeb, tarPos, Quaternion.identity);
+            p.transform.localScale = new Vector3(p.transform.localScale.x, 
+                p.transform.localScale.y * data[i],
+                p.transform.localScale.z); ;
         }
     }
 }
-
