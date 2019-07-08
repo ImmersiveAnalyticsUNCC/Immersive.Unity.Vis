@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomData : MonoBehaviour
 {
-    public GameObject BarPrefeb;
+    public GameObject BarPrefab;
 
     static int number = 10;
     public float[] data = new float[number];
@@ -31,7 +31,7 @@ public class RandomData : MonoBehaviour
             Vector3 tarPos = new Vector3(2 * i - number, data[i] / 2.0f, 0);
             // for Cylinder prefeb
             //Vector3 tarPos = new Vector3(2 * i - number, data[i], 0);
-            var p = Instantiate(BarPrefeb, tarPos, Quaternion.identity);
+            var p = Instantiate(BarPrefab, tarPos, Quaternion.identity);
             p.transform.localScale = new Vector3(p.transform.localScale.x, 
                 p.transform.localScale.y * data[i],
                 p.transform.localScale.z); ;
