@@ -1,23 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-namespace Assets.Scripts {
-    public class Datanode : MonoBehaviour {
+namespace Assets.Scripts
+{
+    public class Datanode : MonoBehaviour
+    {
+        // sphere prefab
         [SerializeField]
-        private GameObject obj;             // sphere prefab
+        private GameObject obj;
+
         [SerializeField]
         private GameObject SpawnBox;
-        private float sizeOfObj = 1f;                                       // SET THIS
+
+        private float sizeOfObj = 1f;
         public List<Vector3> objPositions = new List<Vector3>();
         public List<float> objScales = new List<float>();
         private Color[] colors;
-        public GameObject InfoText;
-        public GameObject CountText;
-        public static string ActivityClicked;
-        float random;
-        void Awake() {
+
+        void Awake()
+        {
             colors = new Color[15];
             colors[0] = new Color(0.5f, 0.5f, 0, 1); // blue
             colors[1] = new Color(1, 0, 1, 1); // green
@@ -30,27 +32,33 @@ namespace Assets.Scripts {
             colors[8] = new Color(1, 1, 0.25f, 1); // teal
             colors[9] = new Color(.75f, .25f, 1, 1); // gold
             colors[10] = new Color(0.5f, .25f, 0.5f, 1); // baby pink
+            colors[10] = new Color(0.5f, .25f, 0.5f, 1); // baby pink
             colors[11] = new Color(0, 0.25f, 0, 1); // dark blue
             colors[12] = new Color(0.5f, 0, 0.5f, 1); // orange
             colors[13] = new Color(0, 0, 0.5f, 1); // silver
             colors[14] = new Color(1f, 1f, 1f, 1); // white
         }
+
         void Start()
         {
             sizeOfObj = obj.transform.localScale.x;
             dataset.makedata();
             Generate();
-            
+
         }
-        public void Generate() {
+
+        public void Generate()
+        {
             // user can read different file and based on (key,value) pairs numbers of bubble charts are instantiated.
-            var keyValPairs = dataset.data;     
+            var keyValPairs = dataset.data;
             int count = 0;
-            foreach (var pair in keyValPairs) {
+            foreach (var pair in keyValPairs)
+            {
                 var currVal = pair.Value;
                 // scaling the dataNode based on respective entries in the dataset that belonged to that type
-                float normalizedScale = GetNormalizedScale(currVal);                    
-                GameObject gameObj = Instantiate (obj, SetBoxBoundaries(normalizedScale), Quaternion.identity) as GameObject;       // INSTANTIATING DATANODES
+                float normalizedScale = GetNormalizedScale(currVal);
+                // INSTANTIATING DATANODES
+                GameObject gameObj = Instantiate(obj, SetBoxBoundaries(normalizedScale), Quaternion.identity) as GameObject;
                 gameObj.GetComponent<DatanodeProperties>().CountInfo = pair.Value;
                 gameObj.GetComponent<DatanodeProperties>().TypeInfo = pair.Key;
                 gameObj.transform.localScale = new Vector3(normalizedScale, normalizedScale, normalizedScale);
@@ -62,10 +70,11 @@ namespace Assets.Scripts {
 
         }
         private Vector3 SetBoxBoundaries(float normalizedScale)
-        {       // we dont want the bubbles (data nodes) to collide with each other and also not placed on each other when spawned
+        {
+            // we dont want the bubbles (data nodes) to collide with each other and also not placed on each other when spawned
             Vector3 LocalPosition;
             BoxCollider Boundaries = SpawnBox.GetComponent<BoxCollider>();
-            random = Random.value;
+            float random = Random.value;
             LocalPosition.x = Mathf.Lerp(Boundaries.center.x + SpawnBox.transform.position.x - (Boundaries.size.x * (SpawnBox.transform.localScale.x / 2))
                 + (normalizedScale / 2),
             Boundaries.center.x + SpawnBox.transform.position.x + (Boundaries.size.x * (SpawnBox.transform.localScale.x / 2)) - (normalizedScale / 2), random);
@@ -85,8 +94,10 @@ namespace Assets.Scripts {
             else
                 return SetBoxBoundaries(normalizedScale);
         }
+
         private bool isAvailable(Vector3 pos)
-        {         // making sure before spawning the object that it wont collide with any other object
+        {
+            // making sure before spawning the object that it wont collide with any other object
             for (int i = 0; i < objPositions.Count; i++)
             {
                 if (Vector3.Distance(pos, objPositions[i]) < ((sizeOfObj / 2.0f) + (objScales[i] / 2.0f)))
@@ -94,21 +105,9 @@ namespace Assets.Scripts {
             }
             return true;
         }
-        private void PositionVandalInfoUI(GameObject gameObj) {         // text that is shown when we hover over each bubble - method called in update function if raycast detects mouse interaction
-            var posInY = gameObj.transform.localPosition.y;
-            var posInX = gameObj.transform.localPosition.x;
-            var scaleInX = gameObj.transform.localScale.x;
-            var scaleInY = gameObj.transform.localScale.y;
-            float upValue = 1.5f;                                                   
-            float downValue = 0.5f;
-            InfoText.GetComponent<RectTransform>().localPosition = new Vector3(posInX, posInY + (scaleInY / 2) + upValue, -5);// specifying the position of text to be displayed
-            CountText.GetComponent<RectTransform>().localPosition = new Vector3(posInX, posInY - (scaleInY / 2) - downValue, -5);
-            InfoText.GetComponent<TextMeshProUGUI>().text = gameObj.GetComponent<DatanodeProperties>().TypeInfo;
-            CountText.GetComponent<TextMeshProUGUI>().text = "Value: " + gameObj.GetComponent<DatanodeProperties>().CountInfo.ToString();
-            InfoText.SetActive(true);
-            CountText.SetActive(true);
-        }
-        private float GetNormalizedScale(int currVal) {
+
+        private float GetNormalizedScale(int currVal)
+        {
             var maxInArray = dataset.MaxInArray();
             var minInArray = dataset.MinInArray();
             var maxNormalVal = dataset.MaxNormalvalue;
@@ -117,17 +116,17 @@ namespace Assets.Scripts {
             float value = ((maxNormalVal - minNormalVal) * (factor)) + 1.0f;
             return value;
         }
-        void Update() {
+
+        void Update()
+        {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, 100))
-            {// raycasting mouse hover, if we hover cursor on a bubble its properties are shown
-                PositionVandalInfoUI(hit.transform.gameObject);
-            }
-            else
             {
-                InfoText.SetActive(false);
-                CountText.SetActive(false);
+                // raycasting mouse hover, if we hover cursor on a bubble its color is randomly changed;
+                GameObject gameObj = hit.transform.gameObject;
+                int random = Random.Range(0, 15);
+                gameObj.GetComponent<MeshRenderer>().material.color = colors[random];
             }
         }
     }
