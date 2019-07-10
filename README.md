@@ -29,9 +29,9 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 ## Generic Utilities
 
-- We've started to design a generic data adaptor. ([Checkout this file](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/blob/master/DataAdapter.cs))
+- We've started to design a generic data adaptor. (DataAdapter.cs)
     - Currently has an implementation for csv files and a simple json reader. The json reader comes from here: [http://wiki.unity3d.com/index.php/SimpleJSON](http://wiki.unity3d.com/index.php/SimpleJSON)
-- [Custom Mesh Generation]()
+- Custom Mesh Generation
 - [Selections & Data Binding](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Selection-and-data-binding)
 
 ---
