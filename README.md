@@ -14,20 +14,18 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 ## List of Visualizations
 
- - [Stacked/Grouped Bars](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Stacked-Bar-Chart)
- - [Circular Heatchart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Circular-Heatchart)
- - [Bubble chart](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Bubble-Chart)
- - [Scatterplot](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Scatterplot)
- - [Image / image stack](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/Stacked-Images)
- - [Node link network visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/Node-link-network-visualization)
- - [Parallel coordinate](https://github.com/ImmersiveAnalyticsUNCC/Unity.Vis/wiki/Parallel-Coordinate-Graph)
- - [3D Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/3D-barChart)
- - [Geospatial visualization](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/wiki/GeoSpatial-Vis)
- - Matrix (coming)
+ - Stacked / Grouped Bars
+ - Circular heatchart
+ - Bar chart
+ - 3D bar chart
+ - Bubble chart
+ - Scatterplot
+ - Image / image stack
+ - Node link 
+ - Parallel coordinate
+ - Geospatial visualization
 
 ---
-
-
 
 ## Generic Utilities
 
@@ -38,11 +36,14 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 ---
 
-## Need Help?
+## Documentation
 
-In case of any problem or assistance, feel free to reach out to us.
+The summary of this library is available at: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/iuv.pdf)
+
+In case of any problems, feel free to reach out to us.
 
 
+---
 
 ## Example Snapshots
 
