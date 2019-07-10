@@ -9,3 +9,5 @@ Functions provided in this example:
 2. Render bar chart
 
 ![Bar chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Stacked_Bars/barChart.png)
+
+![Bar chart element during run time](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Stacked_Bars/barelement.png)
