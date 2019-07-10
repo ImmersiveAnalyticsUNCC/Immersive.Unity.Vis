@@ -38,7 +38,7 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 ## Documentation
 
-The summary of this library is available at: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/iuv.pdf)
+The summary of this library is available at: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/UnityVis.pdf)
 
 In case of any problems, feel free to reach out to us.
 
