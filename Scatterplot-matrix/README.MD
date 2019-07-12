@@ -9,7 +9,7 @@ Functions provided in this example:
 
 2. This project introduces to the use of toggle button in Unity. When certain toggle buttons are checked the corresponding scatterplot matrix will be generated.
 
-![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matirx/Interaction.PNG)
+![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matirx/Interaction.png)
 
 3. Here 3 scripts have been used: 
 	- Parser.cs: This file is responsible of parsing the csv file and storing it into a Dictionary along with the headers
