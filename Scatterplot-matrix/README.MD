@@ -5,11 +5,11 @@ A Unity project that visualizes scatterplot-matirx for the Graduate Admissions d
 Functions provided in this example:
 1. To run this project double click the SampleScene under the Scenes folder and click on the play button.
 
-![Scatterplot-matrix](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matrix/Scatterplot.png)
+![Scatterplot-matrix](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matrix/Scatterplot.PNG)
 
 2. This project introduces to the use of toggle button in Unity. When certain toggle buttons are checked the corresponding scatterplot matrix will be generated.
 
-![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matirx/Interaction.png)
+![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matirx/Interaction.PNG)
 
 3. Here 3 scripts have been used: 
 	- Parser.cs: This file is responsible of parsing the csv file and storing it into a Dictionary along with the headers
