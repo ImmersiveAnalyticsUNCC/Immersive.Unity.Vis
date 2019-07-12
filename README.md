@@ -20,6 +20,7 @@ We have chosen most commonly used visualizations, including bar chart, line char
  - 3D bar chart
  - Bubble chart
  - Scatterplot
+ - Scatterplot-matrix
  - Image / image stack
  - Node link 
  - Parallel coordinate
@@ -59,6 +60,8 @@ Tahir Mahmood (May 2019)
 Willis Fulmer (Dec 2018)
 
 Timothy Hayduk (May 2018)
+
+Rinita Nair (May 2020)
 
 
 
