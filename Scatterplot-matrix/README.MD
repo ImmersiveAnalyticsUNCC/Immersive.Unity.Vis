@@ -7,7 +7,7 @@ Functions provided in this example:
 
 ![Scatterplot-matrix](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matrix/Scatterplot.PNG)
 
-2. This project introduces to the use of toggle button in Unity. When certain toggle buttons are checked the corresponding scatterplot matrix will be generated.
+2. This project introduces to the use of toggle button in Unity. When certain toggle buttons are checked the corresponding scatterplot matrix will be generated. Toggle buttons are part of Canvas under the UI component in Unity. When a canvas is added to the scene Unity adds an Event System along with canvas. This Event System is responsible for detecting the keyboard, mouse and touch events and directs these events to the corresponding game object.
 
 3. Here 3 scripts have been used: 
 	- Parser.cs: This file is responsible of parsing the csv file and storing it into a Dictionary along with the headers
