@@ -50,17 +50,17 @@ public class nodelink : MonoBehaviour
     // reading and parsing CSV file and adding data to appropriate data structures
     public void readData(string filename)
     {
-        StreamReader file = new StreamReader(filename);
-        string line;
-        line = file.ReadLine();
-        string[] line_data = line.Split(',');
-        nodenumber = int.Parse(line_data[0]);
-        while ((line = file.ReadLine()) != null)
+        string[] reader = System.IO.File.ReadAllLines(filename);
+        // get the number of nodes; 
+        string[] line = reader[0].Split(',');
+        nodenumber = int.Parse(line[0]);
+        // get the link information;
+        for (int i = 1; i < reader.Length; i++)
         {
             linknumber++;
-            line_data = line.Split(',');
-            linksdata.Add(int.Parse(line_data[0]));
-            linksdata.Add(int.Parse(line_data[1]));
+            line = reader[i].Split(',');
+            linksdata.Add(int.Parse(line[0]));
+            linksdata.Add(int.Parse(line[1]));
         }
     }
 
