@@ -13,9 +13,8 @@ public class Parser
     public static void Parse()
     {
         data = new Dictionary<string, List<float>>();
-        List<string> lines = new List<string>();
-        TextAsset csv = Resources.Load("Admission_Predict") as TextAsset;                       //Loading the csv file from the Resources folder
-        lines = TextAssetToList(csv);                                                           //This method splits the TextAsset into lines based on the delimiter \n
+        string[] lines;
+        lines = System.IO.File.ReadAllLines(Application.dataPath + "\\Resources\\Admission_Predict.csv");                                                          //This method splits the TextAsset into lines based on the delimiter \n
         List<string> header = new List<string>();
 
         
