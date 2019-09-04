@@ -17,15 +17,15 @@ public class scatterplot : MonoBehaviour
 	// reading and parsing CSV file and adding data to appropriate data structures
     public void readData(string filename)
     {
-        StreamReader file = new StreamReader(filename);
-        string line;
-        while ((line = file.ReadLine()) != null)
+        string[] reader = System.IO.File.ReadAllLines(filename);
+        for (int i = 0; i < reader.Length; i++)
         {
-            string[] line_data = line.Split(',');
-            x_axis.Add(float.Parse(line_data[0]));
-            y_axis.Add(float.Parse(line_data[1]));
-            clusterID.Add((line_data[2]));
+            string[] line = reader[i].Split(',');
+            x_axis.Add(float.Parse(line[0]));
+            y_axis.Add(float.Parse(line[1]));
+            clusterID.Add(line[2]);
         }
+
     }
     // creating Unity built-in primitive(sphere) and using it as a dataPoint in scatter-plot
     public void makePlot()
