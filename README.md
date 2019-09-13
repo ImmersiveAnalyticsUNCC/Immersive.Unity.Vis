@@ -41,6 +41,9 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 The summary of this library is available at: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/UnityVis.pdf)
 
+Steps for deploying to Hololens: [pdf]
+(https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Setting%20up%20a%20basic%20Unity%20project%20to%20deploy%20to%20Hololens.pdf)
+
 In case of any problems, feel free to reach out to us.
 
 
