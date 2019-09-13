@@ -43,6 +43,8 @@ The summary of this library is available at: [pdf](https://github.com/ImmersiveA
 
 Steps for deploying to Hololens: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/HololensDeploymentSteps.pdf)
 
+Steps for runnning a project on Oculus Rift: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Oculus_Rift_Setup.pdf)
+
 In case of any problems, feel free to reach out to us.
 
 
