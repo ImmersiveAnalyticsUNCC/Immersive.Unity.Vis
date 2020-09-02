@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CreatePopUpLabel : MonoBehaviour {
-
+    public GameObject barchart;
     public double value;
     public string xLabel;
     public string categoryLabel;
@@ -24,6 +24,7 @@ public class CreatePopUpLabel : MonoBehaviour {
         {
             Vector3 popUpPos = this.gameObject.transform.position + new Vector3(0, this.transform.localScale.y + 1f, 0);
             objPopUp = Instantiate(Resources.Load("prefabs/others/PopUpValue"), popUpPos, Quaternion.identity) as GameObject; //from prefab
+            objPopUp.transform.parent = barchart.transform;
             GameObject popUpLabel = GameObject.Find("PopUpLabel");
             popUpLabel.GetComponent<TextMesh>().text = "X: " + xLabel + "\nCategory: " + categoryLabel + "\nValue: " + value.ToString(); //TODO: for some reason this thing doesnt update on screen - does retain the inspector screens value
         }

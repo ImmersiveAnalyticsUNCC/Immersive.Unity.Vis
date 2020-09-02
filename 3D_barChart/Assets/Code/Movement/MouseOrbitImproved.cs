@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[AddComponentMenu("Camera-Control/Mouse Orbit with zoom")]
+
 public class MouseOrbitImproved : MonoBehaviour
 {
 
+    public GameObject barchart;
+    bool rotate;
+    Vector3 touchStart;
     public Transform target;
-    public float distance = 5.0f;
+    public float distance = 20.0f;
     public float xSpeed = 120.0f;
     public float ySpeed = 120.0f;
 
@@ -16,59 +19,103 @@ public class MouseOrbitImproved : MonoBehaviour
     public float distanceMin = .5f;
     public float distanceMax = 15f;
 
-    private Rigidbody rigidbody;
+    public float zoomOutMin = 10;
+    public float zoomoutMax = 20;
+  
+    private Vector3 originalPos;
+    public Quaternion originalRot;
 
-    float x = 0.0f;
-    float y = 0.0f;
+    public Vector3 delta = Vector3.zero;
+    private Vector3 lastPos = Vector3.zero;
+
 
     // Use this for initialization
+    //Sets original positions of both barchart and Camera
     void Start()
     {
-        Vector3 angles = transform.eulerAngles;
-        x = angles.y;
-        y = angles.x;
-
-        rigidbody = GetComponent<Rigidbody>();
-
-        // Make the rigid body not change rotation
-        if (rigidbody != null)
-        {
-            rigidbody.freezeRotation = true;
-        }
+       
+        originalRot = barchart.transform.rotation;
+        originalPos = Camera.main.transform.position;
+   
     }
 
-    void LateUpdate()
+    void Update()
     {
-        if ((target) & Input.GetButton("Fire2"))
+    
+        //if user clicks the left mouse button change touchstrart to where the mouse position is located
+        //store position into last position
+        if (Input.GetMouseButtonDown(0))
         {
-            x += Input.GetAxis("Mouse X") * xSpeed * distance * 0.02f;
-            y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
 
-            y = ClampAngle(y, yMinLimit, yMaxLimit);
+            touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            lastPos = Input.mousePosition;
 
-            Quaternion rotation = Quaternion.Euler(y, x, 0);
+        }
+        //if two touches are detected, find the previous and current positions of each touch
+        //calculate the previous and current magnitudes and find the difference between the two
+        //call the zoom function using the difference
+        if (Input.touchCount == 2)
+        {
+            Debug.Log("Two touches");
+            Touch touchZero = Input.GetTouch(0);
+            Touch touchOne = Input.GetTouch(1);
 
-            distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax);
+            Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+            Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
 
-            RaycastHit hit;
-            if (Physics.Linecast(target.position, transform.position, out hit))
+            float prevMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+            float currentMag = (touchZero.position - touchOne.position).magnitude;
+
+            float difference = currentMag - prevMag;
+
+            Zoom(difference * 0.01f);
+        }
+        //if mouse button is pressed/ or finger is touched on screen, will calculate delta of mouse/finger position 
+        //if rotate is false, will then pan screen by changing camera position by adding offset of direction of mouse
+        //if rotate is enabled, will rotate barchart around its axis according to the X axis of the mouse/touch and by the speed at which mouse/finger is moving
+        else if (Input.GetMouseButton(0))
+        {
+            delta = Input.mousePosition - lastPos;
+
+
+            if (rotate == false)
             {
-                distance -= hit.distance;
+                Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Camera.main.transform.position += direction;
             }
-            Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
-            Vector3 position = rotation * negDistance + target.position;
+            else
+            {
+                Debug.Log(Time.deltaTime);
+                barchart.transform.RotateAround(barchart.transform.position, new Vector3(0, Input.GetAxis("Mouse X"), 0), delta.magnitude*Time.deltaTime+delta.magnitude/100);
 
-            transform.rotation = rotation;
-            transform.position = position;
+            }
+            
+        }
+        Zoom(Input.GetAxis("Mouse ScrollWheel"));
+    }
+    //Change the camera orthographic view size between the range of zoomout min and max, and subtract current size from the increment passed in
+    void Zoom(float increment)
+    {
+            Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomoutMax);
+    }
+    //Toggle function called when toggle button is pressed, toggles rotate between true and false
+    public void Toggle()
+    {
+        if (rotate == false)
+        {
+            rotate = true;
+        }
+        else
+        {
+            rotate = false;
         }
     }
-
-    public static float ClampAngle(float angle, float min, float max)
+    //resets camera and barchart to original positions and sizes when reset button is clicked/pressed
+    public void Reset()
     {
-        if (angle < -360F)
-            angle += 360F;
-        if (angle > 360F)
-            angle -= 360F;
-        return Mathf.Clamp(angle, min, max);
+        Camera.main.transform.position = originalPos;
+        barchart.transform.rotation = originalRot;
+        Camera.main.orthographicSize = 20;
     }
+
 }
