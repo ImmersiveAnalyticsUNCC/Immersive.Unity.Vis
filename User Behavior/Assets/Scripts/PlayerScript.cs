@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour {
         display();
         WinText.text = "";
     }
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -24,7 +24,7 @@ public class PlayerScript : MonoBehaviour {
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce(movement * speed);
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {

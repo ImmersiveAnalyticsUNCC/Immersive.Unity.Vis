@@ -12,4 +12,7 @@ UserBehavior Script:
 
 -Remaining scripts are same as the roll a ball tutuorial.
 
+-Disable the "Movement" script to disable the mouse/touch movement of the player.
+-Uncomment the FixedUpdate method in "PlayerScript" to re-enable WASD movement of the player.
+
 <img src="Snippet.PNG" width="600">
