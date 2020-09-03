@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/BarVis.unity
+    guid: 33c3c540fa3305546b3ca49dfc3c0e00
   m_configObjects: {}
