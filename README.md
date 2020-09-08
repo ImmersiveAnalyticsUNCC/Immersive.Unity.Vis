@@ -28,6 +28,16 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 ---
 
+## Structure of repository
+
+- This repository includes three folders for examples depending on your desired deploy platform.
+    - Unity
+	- IoS
+	- Android
+- Some visualization examples are provided for all the deploy platforms.
+
+---
+
 ## Generic Utilities
 
 - We've started to design a generic data adaptor. (DataAdapter.cs)
@@ -39,11 +49,11 @@ We have chosen most commonly used visualizations, including bar chart, line char
 
 ## Documentation
 
-The summary of this library is available at: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/UnityVis.pdf)
+The summary of this library is available at: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Documents/UnityVis.pdf)
 
-Steps for deploying to Hololens: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/HololensDeploymentSteps.pdf)
+Steps for deploying to Hololens: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Documents/HololensDeploymentSteps.pdf)
 
-Steps for runnning a project on Oculus Rift: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Oculus_Rift_Setup.pdf)
+Steps for runnning a project on Oculus Rift: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Documents/Oculus_Rift_Setup.pdf)
 
 In case of any problems, feel free to reach out to us.
 
@@ -52,8 +62,8 @@ In case of any problems, feel free to reach out to us.
 
 ## Example Snapshots
 
-![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Stacked_Bars/barChart.png)
-![heatchart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Circular_Heatchart/Circular_Heatchart_Example.png)
+![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/Stacked_Bars/barChart.png)
+![heatchart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/Circular_Heatchart/Circular_Heatchart_Example.png)
 
 
 
