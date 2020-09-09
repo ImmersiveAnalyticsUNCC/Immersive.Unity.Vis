@@ -29,8 +29,8 @@ public class CreateAxis : MonoBehaviour {
         {
             GameObject YLine = Instantiate(Resources.Load("prefabs/axis/YAxisLine"), new Vector3(-0.96f, YLineSeparation*numYLine, 5f),Quaternion.Euler(0,90,0)) as GameObject;
             GameObject YLineLabel = Instantiate(Resources.Load("prefabs/axis/YAxisLabel"), new Vector3(-1f, YLineSeparation*numYLine, 0f), Quaternion.Euler(0, -90, 0)) as GameObject;
-           YLine.transform.parent = barchart.transform;
-YLineLabel.transform.parent = barchart.transform;
+            YLine.transform.parent = barchart.transform;//added obj as child to barchart
+            YLineLabel.transform.parent = barchart.transform;//added obj as child to barchart
             var YLabelValue= (JSONtoObj.MainChart.yaxis.maxValue / 10) * numYLine;
             YLineLabel.GetComponent<TextMesh>().text= YLabelValue.ToString("0,0"); //TODO: number formatting
     }

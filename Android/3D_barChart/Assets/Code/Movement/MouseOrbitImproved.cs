@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 
 public class MouseOrbitImproved : MonoBehaviour
 {
 
     public GameObject barchart;
+    public Text toggle;
     bool rotate;
     Vector3 touchStart;
     public Transform target;
@@ -27,7 +28,7 @@ public class MouseOrbitImproved : MonoBehaviour
 
     public Vector3 delta = Vector3.zero;
     private Vector3 lastPos = Vector3.zero;
-
+    
 
     // Use this for initialization
     //Sets original positions of both barchart and Camera
@@ -103,11 +104,14 @@ public class MouseOrbitImproved : MonoBehaviour
     {
         if (rotate == false)
         {
+
             rotate = true;
+            toggle.text = "Rotate";
         }
         else
         {
             rotate = false;
+            toggle.text = "Pan";
         }
     }
     //resets camera and barchart to original positions and sizes when reset button is clicked/pressed
