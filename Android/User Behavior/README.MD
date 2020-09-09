@@ -1,18 +1,29 @@
+#User Behavior
+
 This project talks about how User data can be saved into to file and use that same data to recreate the path the user took while playing the game.
 
-UserBehavior Script:
+##Android Version
 
--The UserBehavior script is responsible to writing to the debug.txt file.
+-The user is given rotating yellow cubes that they are to pickup within a given timelimit by touching them
+
+-If the user picks up all of the objects within the timelimit they "win"
+
+-User touch locations are written to a file on whatever device they are using called "Debug.txt:
 
 -The script uses a reference to a datapoint called "location" which is instantiated every time the player moves 1 unit farther from the previous position.
 
 -Then the position of the location gameObject is stored along with the timestamp in the debug.txt file.
 
--The color of the individual location gameobject is changed based on the number of gameobjects already created and then assigning this new rgb value.
 
--Remaining scripts are same as the roll a ball tutuorial.
+##Example 1: Winning
 
--Disable the "Movement" script to disable the mouse/touch movement of the player.
--Uncomment the FixedUpdate method in "PlayerScript" to re-enable WASD movement of the player.
+<img src="01.gif" width="720" height = "1560">
 
-<img src="Snippet.PNG" width="600">
+## Example 2: Losing
+
+<img src="02.gif" width="720" height = "1560">
+
+
+
+
+
