@@ -1,8 +1,8 @@
-#User Behavior
+# User Behavior
 
 This project talks about how User data can be saved into to file and use that same data to recreate the path the user took while playing the game.
 
-##Android Version
+## Android Version
 
 -The user is given rotating yellow cubes that they are to pickup within a given timelimit by touching them
 
@@ -15,13 +15,13 @@ This project talks about how User data can be saved into to file and use that sa
 -Then the position of the location gameObject is stored along with the timestamp in the debug.txt file.
 
 
-##Example 1: Winning
+## Example 1: Winning
 
-<img src="01.gif" width="720" height = "1560">
+<img src="01.gif" width="360" height = "720">
 
 ## Example 2: Losing
 
-<img src="02.gif" width="720" height = "1560">
+<img src="02.gif" width="360" height = "720">
 
 
 
