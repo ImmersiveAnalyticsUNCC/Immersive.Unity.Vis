@@ -8,4 +8,4 @@ Functions provided in this example:
 
 2. Render scatter plot
 
-![Scatter plot](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot/scatterplot.png)
+![Scatter plot](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/Scatterplot/scatterplot.png)
