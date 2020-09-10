@@ -8,13 +8,13 @@ Two functions are provided in this example.
 
 1. Bar chart
 
-![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/BarChart/barchart.png)
+![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/BarChart/barchart.png)
 
 2. Random data generation
 
 There are multiple ways to generate the basic bar chart. This example uses a prefab as the bar, which can be easily switched to different shapes instead of the regular bar. The following figure uses a different prefab with blue cube and cylinder to replace the regular bars. Note that the position of the prefab may affect the placement of shape in space. We have two options for locating the 'y' position.
 
-![Alternate bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/BarChart/bar3.png)
+![Alternate bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/BarChart/bar3.png)
 
 
 
