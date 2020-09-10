@@ -14,7 +14,7 @@ Two functions are provided in this example.
 
 There are multiple ways to generate the basic bar chart. This example uses a prefab as the bar, which can be easily switched to different shapes instead of the regular bar. The following figure uses a different prefab with blue cube and cylinder to replace the regular bars. Note that the position of the prefab may affect the placement of shape in space. We have two options for locating the 'y' position.
 
-![Alternate bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/BarChart/bar3.png)
+![Alternate bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Android/BarChart/bar3.png)
 
 
 
