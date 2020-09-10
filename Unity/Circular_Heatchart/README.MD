@@ -6,7 +6,7 @@ Functions provided in this example:
 
 1. Circular chart
 
-![Circular Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Circular_Heatchart/Circular_Heatchart_Example.png)
+![Circular Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/Circular_Heatchart/Circular_Heatchart_Example.png)
 
 2. Read csv data file (DataAdaptor.cs)
 
