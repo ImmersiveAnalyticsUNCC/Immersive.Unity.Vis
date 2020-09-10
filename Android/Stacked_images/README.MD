@@ -8,4 +8,4 @@ Functions provided in this example:
 
 2. Render image layers
 
-![Stacked images](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Stacked_images/stackedImages.png)
+![Stacked images](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Android/Stacked_images/stackedImages.png)
