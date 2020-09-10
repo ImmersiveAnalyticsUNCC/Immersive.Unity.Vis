@@ -55,6 +55,8 @@ Steps for deploying to Hololens: [pdf](https://github.com/ImmersiveAnalyticsUNCC
 
 Steps for runnning a project on Oculus Rift: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Documents/Oculus_Rift_Setup.pdf)
 
+Steps for running a project on Oculus Quest: [pdf](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Documents/Unity%20Oculus%20Quest%20Documentation.pdf)
+
 In case of any problems, feel free to reach out to us.
 
 
