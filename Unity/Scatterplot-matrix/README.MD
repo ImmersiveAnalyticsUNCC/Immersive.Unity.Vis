@@ -5,7 +5,7 @@ A Unity project that visualizes scatterplot-matirx for the Graduate Admissions d
 Functions provided in this example:
 1. To run this project double click the SampleScene under the Scenes folder and click on the play button.
 
-![Scatterplot-matrix](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Scatterplot-matrix/Scatterplot.PNG)
+![Scatterplot-matrix](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/Scatterplot-matrix/Scatterplot.PNG)
 
 2. This project introduces to the use of toggle button in Unity. When certain toggle buttons are checked the corresponding scatterplot matrix will be generated. Toggle buttons are part of Canvas under the UI component in Unity. When a canvas is added to the scene Unity adds an Event System along with canvas. This Event System is responsible for detecting the keyboard, mouse and touch events and directs these events to the corresponding game object.
 
