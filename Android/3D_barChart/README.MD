@@ -5,13 +5,13 @@ This is a 3d bar chart visualization made using unity3d.
 ## Functions provided in this example:
 1. 3D bar chart
 
-![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/3D_barChart/barchart.png)
+![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Android/3D_barChart/barchart.png)
 
 2. Labels for bar chart
 
 3. Interactive mouse selection and text labels for showing data
 
-![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/3D_barChart/barchart-interact.png)
+![Mouse Interaction](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Android/3D_barChart/barchart-interact.png)
 
 4. Switching datasets from object "main camera".
 
