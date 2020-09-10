@@ -44,4 +44,5 @@ Zoom: Zoom by using two fingers, can pinch to zoom in/out
 Rotate: uses a toggle button to switch between rotate/pan functions. Rotate by swiping finger across scene
 Reset: Tap button to reset scene positions/sizes
 
+![Bar Chart on iPad](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/ios/3D_barChart/barchartipad.jpg)
 	
