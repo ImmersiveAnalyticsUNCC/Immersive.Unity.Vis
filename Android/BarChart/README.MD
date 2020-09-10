@@ -8,7 +8,7 @@ Two functions are provided in this example.
 
 1. Bar chart
 
-![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/BarChart/barchart.png)
+![Bar Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Android/BarChart/barchart.png)
 
 2. Random data generation
 
