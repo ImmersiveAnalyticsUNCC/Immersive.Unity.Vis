@@ -6,7 +6,7 @@ Functions provided in this example:
 
 1. Bubble chart
 
-![Bubble Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Bubble_Chart/bubble_chart.png)
+![Bubble Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Unity/Bubble_Chart/bubble_chart.png)
 
 2. Read data from a data file.
 
