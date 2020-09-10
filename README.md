@@ -31,9 +31,9 @@ We have chosen most commonly used visualizations, including bar chart, line char
 ## Structure of repository
 
 - This repository includes three folders for examples depending on your desired deploy platform.
-    - Unity
-	- IoS
-	- Android
+    - Unity, Unity Version 2018.4 LTS
+	- IoS, Unity Version 2019
+	- Android, Unity Version 2019
 - Some visualization examples are provided for all the deploy platforms.
 
 ---
