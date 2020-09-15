@@ -14,7 +14,7 @@ Functions provided in this example:
 
 ## Slider to show data above a certain ammount
 
-<img src="Snippet.PNG" width="600">
+<img src="bubble_chart.PNG" width="600">
 
 <img src="01.gif" width="360" height = "720">
 
