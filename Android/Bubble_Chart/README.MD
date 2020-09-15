@@ -1,15 +1,22 @@
-Bubble chart
+# Bubble chart
 
 This is a bubble chart visualization made using unity3d.
 
 Functions provided in this example:
 
-1. Bubble chart
+## Bubble chart
 
-![Bubble Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Android/Bubble_Chart/bubble_chart.png)
+![Bubble Chart](https://github.com/ImmersiveAnalyticsUNCC/Immersive.Unity.Vis/blob/master/Bubble_Chart/bubble_chart.png)
 
-2. Read data from a data file.
+## Read data from a data file.
 
-3. Interactive mouse selection for showing data
+## Interactive mouse selection for showing data
+
+## Slider to show data above a certain ammount
+
+<img src="Snippet.PNG" width="600">
+
+<img src="01.gif" width="360" height = "720">
+
 
 
