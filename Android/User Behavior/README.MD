@@ -1,6 +1,6 @@
 # User Behavior
 
-This project talks about how User data can be saved into to file and use that same data to recreate the path the user took while playing the game.
+This project shows how User data can be saved to a file and how we are able to use that same data to recreate the path the user took while playing the game.
 
 ## Android Version
 
@@ -13,7 +13,6 @@ This project talks about how User data can be saved into to file and use that sa
 -The script uses a reference to a datapoint called "location" which is instantiated every time the player moves 1 unit farther from the previous position.
 
 -Then the position of the location gameObject is stored along with the timestamp in the debug.txt file.
-
 
 ## Example 1: Winning
 
