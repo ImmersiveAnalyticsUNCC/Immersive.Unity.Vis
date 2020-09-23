@@ -6,7 +6,7 @@ Functions provided in this example:
 
 1. Graph data with nodes and links as a csv file.
 
-<img src="graph.PNG" width="600">
+<img src="graph.png" width="600">
 
 2. Generation of nodes and links based on data in run time.
 
