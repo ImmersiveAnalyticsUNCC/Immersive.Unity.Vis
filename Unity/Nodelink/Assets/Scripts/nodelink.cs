@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.UI;
 
 public class nodelink : MonoBehaviour
 {
@@ -43,25 +44,31 @@ public class nodelink : MonoBehaviour
 
     void Start()
     {
-        readData("Assets/Data/graph1.csv");
-        Generate();
+       // TextAsset txt = (TextAsset)Resources.Load("Assets/Data/graph1.csv");
+        readData("Data/graph1");
+       Generate();
     }
 
     // reading and parsing CSV file and adding data to appropriate data structures
     public void readData(string filename)
     {
-        string[] reader = System.IO.File.ReadAllLines(filename);
+        TextAsset txt = (TextAsset)Resources.Load(filename, typeof(TextAsset));
+        string filecontents = txt.text;
+        string[] reader = filecontents.Split('\n');
+        string[] line = filecontents.Split(',');
+ 
         // get the number of nodes; 
-        string[] line = reader[0].Split(',');
         nodenumber = int.Parse(line[0]);
+        
         // get the link information;
-        for (int i = 1; i < reader.Length; i++)
+       for (int i = 1; i < reader.Length-1; i++)
         {
             linknumber++;
-            line = reader[i].Split(',');
+          line = reader[i].Split(',');
+           
             linksdata.Add(int.Parse(line[0]));
-            linksdata.Add(int.Parse(line[1]));
-        }
+           linksdata.Add(int.Parse(line[1]));
+       }
     }
 
     public Vector3 GetAvailabllPos()
