@@ -1,4 +1,4 @@
-Read the commented portions of the scripts for a better understand of how the project works.
+Read the commented portions of the Chrorpleth and JSONReader scripts for a better understanding of how the project works.
 
 Choropleth Running GIF:
 
