@@ -1,6 +1,7 @@
 Read the commented portions of the Chrorpleth and JSONReader scripts for a better understanding of how the project works.
 
 Changed the white color of the states to grey.
+
 Added single-selection highlighting with outline width and color being able to change via the Outline script.
 
 Choropleth Running GIF:
