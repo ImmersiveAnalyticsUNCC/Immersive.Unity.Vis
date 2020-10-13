@@ -1,6 +1,7 @@
 ﻿/* Authored by Christian Motley
  * For use in Dr. Aidong Lu's Immersive Vis Repository for her ITCS - 4123/5123 - Visualization and Visual Communication course at UNC Charlotte.
- * Last Modified: October 6th, 2020 */
+ * Using the Quick Outline asset from the Unity Asset Store with slight modifications - https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
+ * Last Modified: October 13th, 2020 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,12 +10,11 @@ public class Choropleth : MonoBehaviour
 {
     [Tooltip("Array of data values.")]
     public float dataValue = 0;
-    private GameObject gameobject;
+    private GameObject state;
 
     void Start()
     {
-        string gameObjectName = this.name;
-        gameobject = GameObject.Find(gameObjectName);
+        state = this.gameObject;
 
         Invoke("checkColorValue", 2.0f); // Calls the method after X seconds.
         //InvokeRepeating("checkColorValue", 2.0f, 3.0f); // Calls the method in X seconds and repeats the call every Y seconds.
@@ -26,27 +26,27 @@ public class Choropleth : MonoBehaviour
         // Change the color and cut-off value to whatever you want.
         if (dataValue <= 0)
         {
-            gameobject.GetComponent<MeshRenderer>().material.color = Color.white;
+            state.GetComponent<MeshRenderer>().material.color = Color.grey;
         }
         else if(dataValue > 0 && dataValue <= 25)
         {
-            gameobject.GetComponent<MeshRenderer>().material.color = Color.yellow;
+            state.GetComponent<MeshRenderer>().material.color = Color.yellow;
         }
         else if(dataValue > 25 && dataValue <= 50)
         {
-            gameobject.GetComponent<MeshRenderer>().material.color = Color.cyan;
+            state.GetComponent<MeshRenderer>().material.color = Color.cyan;
         }
         else if(dataValue > 50 && dataValue <= 75)
         {
-            gameobject.GetComponent<MeshRenderer>().material.color = Color.green;
+            state.GetComponent<MeshRenderer>().material.color = Color.green;
         }
         else if(dataValue > 75 && dataValue <= 99)
         {
-            gameobject.GetComponent<MeshRenderer>().material.color = Color.blue;
+            state.GetComponent<MeshRenderer>().material.color = Color.blue;
         }
         else
         {
-            gameobject.GetComponent<MeshRenderer>().material.color = Color.red;
+            state.GetComponent<MeshRenderer>().material.color = Color.red;
         }
     }
 }
