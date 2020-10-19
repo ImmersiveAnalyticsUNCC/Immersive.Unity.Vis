@@ -1,4 +1,4 @@
-Read the commented portions of the Chrorpleth and JSONReader scripts for a better understanding of how the project works.
+Read the commented portions of the Chorpleth and JSONReader scripts for a better understanding of how the project works.
 
 Changed the white color of the states to grey.
 
