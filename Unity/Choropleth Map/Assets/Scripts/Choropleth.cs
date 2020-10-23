@@ -1,7 +1,7 @@
 ﻿/* Authored by Christian Motley
  * For use in Dr. Aidong Lu's Immersive Vis Repository for her ITCS - 4123/5123 - Visualization and Visual Communication course at UNC Charlotte.
  * Using the Quick Outline asset from the Unity Asset Store with slight modifications - https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
- * Last Modified: October 19th, 2020 */
+ * Last Modified: October 23th, 2020 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,12 +13,10 @@ public class Choropleth : MonoBehaviour
     [HideInInspector]
     public Collider lastSelected = null;
 
-    Choropleth choropleth;
     Outline outline;
 
     void Start()
     {
-        choropleth = gameObject.GetComponent<Choropleth>();
         Invoke("checkColorValue", 2.0f); // Calls the method after X seconds.
         //InvokeRepeating("checkColorValue", 2.0f, 3.0f); // Calls the method in X seconds and repeats the call every Y seconds.
     }

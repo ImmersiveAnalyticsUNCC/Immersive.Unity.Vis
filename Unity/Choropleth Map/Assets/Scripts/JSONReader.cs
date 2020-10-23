@@ -1,7 +1,7 @@
 ﻿/* Authored by Christian Motley
  * For use in Dr. Aidong Lu's Immersive Vis Repository for her ITCS - 4123/5123 - Visualization and Visual Communication course at UNC Charlotte.
  * Using the Quick Outline asset from the Unity Asset Store with slight modifications - https://assetstore.unity.com/packages/tools/particles-effects/quick-outline-115488
- * Last Modified: October 19th, 2020 */
+ * Last Modified: October 23th, 2020 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +12,6 @@ public class JSONReader : MonoBehaviour
     public TextAsset jsonFile;
 
     Choropleth choropleth;
-    Outline outline;
 
     void Start()
     {
@@ -25,7 +24,7 @@ public class JSONReader : MonoBehaviour
              * otherwise there will be an NullReferenceException and all following states will not be read. */
             choropleth = GameObject.Find(state.name).GetComponent<Choropleth>(); //Finds the gameobject with the name that matches the name in the JSON file and gets the Choropleth script.
             choropleth.dataValue = state.number; // Changes the Chroropleth script that is attatched to the state's dataValue variable to the number from the JSON file.
-            //Debug.Log("Found state: " + state.name + "\n\t  With data value: " + state.number);
+            Debug.Log("Found state: " + state.name + "\n\t  With data value: " + state.number);
         }
     }
 }
