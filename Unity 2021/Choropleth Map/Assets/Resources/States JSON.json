@@ -1,0 +1,205 @@
+  {
+      "states":
+      [
+        {
+          "name": "Alabama",
+          "number": "69"
+        },
+		{
+          "name": "Alaska",
+          "number": "0"
+        },
+		{
+          "name": "Arizona",
+          "number": "3"
+        },
+		{
+          "name": "Arkansas",
+          "number": "2"
+        },
+		{
+          "name": "California",
+          "number": "69"
+        },
+		{
+          "name": "Colorado",
+          "number": "420"
+        },
+		{
+          "name": "Connecticut",
+          "number": "18"
+        },
+		{
+          "name": "Delaware",
+          "number": "15"
+        },
+		{
+          "name": "Florida",
+          "number": "100"
+        },
+		{
+          "name": "Georgia",
+          "number": "12"
+        },
+        {
+          "name": "Hawaii",
+          "number": "100"
+        },
+		{
+          "name": "Idaho",
+          "number": "62"
+        },
+		{
+          "name": "Illinois",
+          "number": "89"
+        },
+		{
+          "name": "Indiana",
+          "number": "72"
+        },
+		{
+          "name": "Iowa",
+          "number": "78"
+        },
+		{
+          "name": "Kansas",
+          "number": "60"
+        },
+		{
+          "name": "Kentucky",
+          "number": "21"
+        },
+		{
+          "name": "Louisiana",
+          "number": "35"
+        },
+		{
+          "name": "Maine",
+          "number": "0"
+        },
+		{
+          "name": "Maryland",
+          "number": "82"
+        },
+		{
+          "name": "Massachusetts",
+          "number": "85"
+        },
+		{
+          "name": "Michigan",
+          "number": "50"
+        },
+		{
+          "name": "Minnesota",
+          "number": "75"
+        },
+		{
+          "name": "Mississippi",
+          "number": "10"
+        },
+		{
+          "name": "Missouri",
+          "number": "10"
+        },
+		{
+          "name": "Montana",
+          "number": "50"
+        },
+		{
+          "name": "Nebraska",
+          "number": "50"
+        },
+		{
+          "name": "Nevada",
+          "number": "65"
+        },
+		{
+          "name": "New Hampshire",
+          "number": "0"
+        },
+		{
+          "name": "New Jersey",
+          "number": "85"
+        },
+		{
+          "name": "New Mexico",
+          "number": "30"
+        },
+		{
+          "name": "New York",
+          "number": "100"
+        },
+		{
+          "name": "North Carolina",
+          "number": "0"
+        },
+		{
+          "name": "North Dakota",
+          "number": "0"
+        },
+		{
+          "name": "Ohio",
+          "number": "50"
+        },
+		{
+          "name": "Oklahoma",
+          "number": "25"
+        },
+		{
+          "name": "Oregon",
+          "number": "99"
+        },
+		{
+          "name": "Pennsylvania",
+          "number": "85"
+        },
+		{
+          "name": "Rhode Island",
+          "number": "74"
+        },
+		{
+          "name": "South Carolina",
+          "number": "25"
+        },
+		{
+          "name": "South Dakota",
+          "number": "3"
+        },
+		{
+          "name": "Tennessee",
+          "number": "10"
+        },
+		{
+          "name": "Texas",
+          "number": "100"
+        },
+		{
+          "name": "Utah",
+          "number": "65"
+        },
+		{
+          "name": "Vermont",
+          "number": "30"
+        },
+		{
+          "name": "Virginia",
+          "number": "76"
+        },
+		{
+          "name": "Washington",
+          "number": "90"
+        },
+		{
+          "name": "West Virginia",
+          "number": "43"
+        },
+		{
+          "name": "Wisconsin",
+          "number": "5"
+        },
+        {
+          "name": "Wyoming",
+          "number": "0"
+        }
+      ]
+    }
